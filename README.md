@@ -14,6 +14,3 @@
 ![GitHub Org's size](https://img.shields.io/github/languages/code-size/lucasyuk1/trybe-exercicios?style=social)
 ![GitHub Org's files](https://img.shields.io/github/directory-file-count/lucasyuk1/trybe-exercicios?style=social)
 
-
-
-    
