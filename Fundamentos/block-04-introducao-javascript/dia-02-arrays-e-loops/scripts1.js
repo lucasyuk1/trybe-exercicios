@@ -1,4 +1,5 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers2 = [];
 let sum = numbers[0];
 let major = 0;
 let minor = numbers[0];
@@ -7,11 +8,11 @@ let imp = 0;
 for (let i = 0; i < numbers.length; i += 1) {
   console.log(numbers[i]);
   sum += numbers[i];
-  
+  numbers2[i] = numbers[i] / 2;
   if (numbers[i] > major) {
     major = numbers[i];
   }
-  
+
   if (numbers[i] < minor) {
     minor = numbers[i];
   }
@@ -48,3 +49,7 @@ if (imp > 0) {
 // Utilizando for, descubra qual o menor valor contido no array e imprima-o;
 
 console.log('O menor valor é:', minor);
+
+// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+
+console.log('Os valores dividos por 2 são:', numbers2);
