@@ -62,4 +62,26 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+// Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
 
+// const authorBornIn1947 = (author) => {
+//  const result = author.find( (book) => book.author.birthYear === 1947 )
+//  return result.author.name;
+// }
+
+// console.log(authorBornIn1947(books));
+
+// Retorne o nome do livro de menor nome.
+
+function smallerName(array) {
+  let nameBook = 'As Crônicas de Gelo e Fogo';
+  array.forEach(book => {
+    if (book.name.length < nameBook.length)
+    nameBook = book.name;
+  });
+  return nameBook;
+}
+
+console.log(smallerName(books));
+
+//Ordene os livros por data de lançamento em ordem decrescente.
