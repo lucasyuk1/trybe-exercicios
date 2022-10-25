@@ -73,15 +73,25 @@ const books = [
 
 // Retorne o nome do livro de menor nome.
 
-function smallerName(array) {
-  let nameBook = 'As Crônicas de Gelo e Fogo';
-  array.forEach(book => {
-    if (book.name.length < nameBook.length)
-    nameBook = book.name;
-  });
-  return nameBook;
-}
+// function smallerName(array) {
+//   let nameBook = 'As Crônicas de Gelo e Fogo';
+//   array.forEach(book => {
+//     if (book.name.length < nameBook.length)
+//     nameBook = book.name;
+//   });
+//   return nameBook;
+// }
 
-console.log(smallerName(books));
+// console.log(smallerName(books));
 
 //Ordene os livros por data de lançamento em ordem decrescente.
+function decres (a, b) {
+  return b.releaseYear - a.releaseYear;
+}
+
+function booksOrderedByReleaseYearDesc(array) {
+
+  return array.sort(decres);
+}
+
+console.log(booksOrderedByReleaseYearDesc(books));
